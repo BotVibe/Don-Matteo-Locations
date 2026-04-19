@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Matteo - Interaktive Karte der Drehorte</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Don Matteo - Drehorte</h1>
+        <p>Eine interaktive Reise durch Gubbio und Spoleto</p>
+    </header>
+
+    <main>
+        <section id="map-container">
+            <div id="map"></div>
+        </section>
+
+        <section id="timeline-container">
+            <h2>Wähle eine Staffel</h2>
+            <div id="timeline">
+                <button class="season-btn active" data-season="all">Alle Drehorte</button>
+                <!-- Season buttons will be generated here -->
+            </div>
+        </section>
+
+        <section id="details-container" class="hidden">
+            <div id="details-content">
+                <button id="close-details">&times;</button>
+                <div class="details-image-container">
+                    <img id="details-image" src="" alt="Drehort Bild">
+                </div>
+                <div class="details-info">
+                    <h2 id="details-name">Name des Ortes</h2>
+                    <div class="info-badge">
+                        <span id="details-source-reliability" class="reliability-high">Quelle</span>
+                    </div>
+                    <p class="description" id="details-description">Kurze Beschreibung</p>
+                    <h3>Hintergrundinformationen</h3>
+                    <p id="details-background">Hintergrundinfos</p>
+                    <p class="source-info">Quelle: <span id="details-source">Quelle</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Erstellt für Don Matteo Fans.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
