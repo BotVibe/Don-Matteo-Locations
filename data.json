@@ -1,0 +1,119 @@
+{
+  "seasons": [
+    { "id": 1, "name": "Staffel 1 (2000)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale"] },
+    { "id": 2, "name": "Staffel 2 (2001)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale"] },
+    { "id": 3, "name": "Staffel 3 (2002)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
+    { "id": 4, "name": "Staffel 4 (2004)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
+    { "id": 5, "name": "Staffel 5 (2006)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
+    { "id": 6, "name": "Staffel 6 (2008)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
+    { "id": 7, "name": "Staffel 7 (2009)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
+    { "id": 8, "name": "Staffel 8 (2011)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
+    { "id": 9, "name": "Staffel 9 (2014)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso"] },
+    { "id": 10, "name": "Staffel 10 (2016)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
+    { "id": 11, "name": "Staffel 11 (2018)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
+    { "id": 12, "name": "Staffel 12 (2020)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
+    { "id": 13, "name": "Staffel 13 (2022)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
+    { "id": 14, "name": "Staffel 14 (2024)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] }
+  ],
+  "locations": [
+    {
+      "id": "gubbio_piazza_grande",
+      "name": "Piazza Grande & Palazzo Pretorio (Gubbio)",
+      "lat": 43.3533,
+      "lng": 12.5786,
+      "description": "Zentraler Schauplatz der ersten 8 Staffeln. Hier befand sich die Kaserne der Carabinieri.",
+      "background": "In der Serie diente der Palazzo Pretorio auf der Piazza Grande für die Innenaufnahmen der Kaserne von Maresciallo Cecchini und Capitano Tommasi. Die Piazza selbst wurde für unzählige Außenaufnahmen genutzt.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
+      "source": "Italy for Movies / offizielle Produktionsinfos",
+      "reliability": "Hoch (Offizielle Drehorte)"
+    },
+    {
+      "id": "gubbio_san_giovanni",
+      "name": "Chiesa di San Giovanni Battista (Gubbio)",
+      "lat": 43.3524,
+      "lng": 12.5756,
+      "description": "Die Kirche von Don Matteo in den ersten Staffeln (Außenaufnahmen).",
+      "background": "Diese Kirche aus dem 13. Jahrhundert wurde als Außenansicht für Don Matteos Pfarrei in Gubbio verwendet. Sie ist eines der bekanntesten gotischen Bauwerke der Stadt.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Church_of_San_Giovanni_in_Gubbio_view_from_outside.JPG/960px-Church_of_San_Giovanni_in_Gubbio_view_from_outside.JPG",
+      "source": "Italy for Movies",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "gubbio_san_marziale",
+      "name": "Chiesa di San Marziale (Gubbio)",
+      "lat": 43.3551,
+      "lng": 12.5804,
+      "description": "Innenaufnahmen der Kirche von Don Matteo.",
+      "background": "Während die San Giovanni Kirche für Außenaufnahmen genutzt wurde, diente die romanische Kirche San Marziale als Kulisse für die meisten Predigten und Innenaufnahmen von Don Matteo in Gubbio.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
+      "source": "Italy for Movies",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "gubbio_parco_ranghiasci",
+      "name": "Parco Ranghiasci (Gubbio)",
+      "lat": 43.3550,
+      "lng": 12.5760,
+      "description": "Ein beliebter Park, in dem Tommasi und Cecchini oft joggen gingen.",
+      "background": "Ein malerischer englischer Landschaftsgarten am Hang von Gubbio, der in vielen Episoden für Spaziergänge, Jogging-Szenen und private Gespräche der Protagonisten genutzt wurde.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
+      "source": "Italy for Movies",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "spoleto_duomo",
+      "name": "Duomo di Spoleto (Piazza del Duomo)",
+      "lat": 42.7337,
+      "lng": 12.7388,
+      "description": "Der wichtigste Schauplatz ab Staffel 9.",
+      "background": "Nach dem Umzug der Serie nach Spoleto wurde die Piazza del Duomo zum neuen Zentrum der Serie. Hier befinden sich das Pfarrhaus, die neue Carabinieri-Kaserne und das Sprechzimmer. Der Dom selbst ist im Hintergrund zahlreicher Szenen zu sehen.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
+      "source": "UmbriaSì / UmbriaTourism",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "spoleto_palazzo_bufalini",
+      "name": "Palazzo Bufalini (Spoleto)",
+      "lat": 42.7338,
+      "lng": 12.7378,
+      "description": "Außenaufnahmen der Carabinieri-Kaserne ab Staffel 9.",
+      "background": "Der Palast grenzt an die Piazza del Duomo und dient in der Fiktion als Kaserne der Carabinieri von Spoleto.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
+      "source": "UmbriaSì",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "spoleto_sant_eufemia",
+      "name": "Basilica di Sant'Eufemia (Spoleto)",
+      "lat": 42.7330,
+      "lng": 12.7369,
+      "description": "Die Kirche von Don Matteo in Spoleto.",
+      "background": "Diese beeindruckende romanische Basilika im Bischofspalast dient ab Staffel 9 als neue Kirche von Don Matteo. Viele innere Reflexionsszenen und Predigten wurden hier gedreht.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chiesa_Sant%27Eufemia_%28Spoleto%29.jpg/960px-Chiesa_Sant%27Eufemia_%28Spoleto%29.jpg",
+      "source": "UmbriaSì",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "spoleto_caio_melisso",
+      "name": "Teatro Caio Melisso (Spoleto)",
+      "lat": 42.7339,
+      "lng": 12.7383,
+      "description": "Das Sprechzimmer des Gefängnisses.",
+      "background": "Das älteste Theater von Spoleto wurde für die Serie kreativ umfunktioniert und dient als Gefängnis-Sprechzimmer, in dem Don Matteo häufig mit Verdächtigen spricht.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
+      "source": "UmbriaSì",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "spoleto_rocca",
+      "name": "Rocca Albornoziana & Ponte delle Torri (Spoleto)",
+      "lat": 42.7326,
+      "lng": 12.7419,
+      "description": "Häufig im Hintergrund gezeigte Wahrzeichen.",
+      "background": "Die Festung und das beeindruckende mittelalterliche Aquädukt sind charakteristische Kulissen für Drohnenflüge und Landschaftsaufnahmen in Spoleto und verankern die Serie stark in der Region Umbrien.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Spoleto-ponte_delle_torri.jpg/960px-Spoleto-ponte_delle_torri.jpg",
+      "source": "Blogging In Italy",
+      "reliability": "Hoch"
+    }
+  ]
+}
