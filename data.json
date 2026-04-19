@@ -1,19 +1,184 @@
 {
   "seasons": [
-    { "id": 1, "name": "Staffel 1 (2000)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale"] },
-    { "id": 2, "name": "Staffel 2 (2001)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale"] },
-    { "id": 3, "name": "Staffel 3 (2002)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
-    { "id": 4, "name": "Staffel 4 (2004)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
-    { "id": 5, "name": "Staffel 5 (2006)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
-    { "id": 6, "name": "Staffel 6 (2008)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
-    { "id": 7, "name": "Staffel 7 (2009)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
-    { "id": 8, "name": "Staffel 8 (2011)", "location_ids": ["gubbio_piazza_grande", "gubbio_san_giovanni", "gubbio_san_marziale", "gubbio_parco_ranghiasci"] },
-    { "id": 9, "name": "Staffel 9 (2014)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso"] },
-    { "id": 10, "name": "Staffel 10 (2016)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
-    { "id": 11, "name": "Staffel 11 (2018)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
-    { "id": 12, "name": "Staffel 12 (2020)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
-    { "id": 13, "name": "Staffel 13 (2022)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] },
-    { "id": 14, "name": "Staffel 14 (2024)", "location_ids": ["spoleto_duomo", "spoleto_palazzo_bufalini", "spoleto_sant_eufemia", "spoleto_caio_melisso", "spoleto_rocca"] }
+    {
+      "id": 1,
+      "name": "Staffel 1 (2000)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Staffel 2 (2001)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Staffel 3 (2002)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_parco_ranghiasci",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Staffel 4 (2004)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_parco_ranghiasci",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Staffel 5 (2006)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_parco_ranghiasci",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Staffel 6 (2008)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_parco_ranghiasci",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Staffel 7 (2009)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_parco_ranghiasci",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Staffel 8 (2011)",
+      "location_ids": [
+        "gubbio_piazza_grande",
+        "gubbio_san_giovanni",
+        "gubbio_san_marziale",
+        "gubbio_parco_ranghiasci",
+        "gubbio_piazza_40_martiri",
+        "gubbio_teatro_romano",
+        "gubbio_basilica_sant_ubaldo"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Staffel 9 (2014)",
+      "location_ids": [
+        "spoleto_duomo",
+        "spoleto_palazzo_bufalini",
+        "spoleto_sant_eufemia",
+        "spoleto_caio_melisso",
+        "spoleto_corso_garibaldi",
+        "spoleto_san_nicolo"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Staffel 10 (2016)",
+      "location_ids": [
+        "spoleto_duomo",
+        "spoleto_palazzo_bufalini",
+        "spoleto_sant_eufemia",
+        "spoleto_caio_melisso",
+        "spoleto_rocca",
+        "spoleto_corso_garibaldi",
+        "spoleto_san_nicolo"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Staffel 11 (2018)",
+      "location_ids": [
+        "spoleto_duomo",
+        "spoleto_palazzo_bufalini",
+        "spoleto_sant_eufemia",
+        "spoleto_caio_melisso",
+        "spoleto_rocca",
+        "spoleto_corso_garibaldi",
+        "spoleto_san_nicolo"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Staffel 12 (2020)",
+      "location_ids": [
+        "spoleto_duomo",
+        "spoleto_palazzo_bufalini",
+        "spoleto_sant_eufemia",
+        "spoleto_caio_melisso",
+        "spoleto_rocca",
+        "spoleto_corso_garibaldi",
+        "spoleto_san_nicolo"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Staffel 13 (2022)",
+      "location_ids": [
+        "spoleto_duomo",
+        "spoleto_palazzo_bufalini",
+        "spoleto_sant_eufemia",
+        "spoleto_caio_melisso",
+        "spoleto_rocca",
+        "spoleto_corso_garibaldi",
+        "spoleto_san_nicolo"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Staffel 14 (2024)",
+      "location_ids": [
+        "spoleto_duomo",
+        "spoleto_palazzo_bufalini",
+        "spoleto_sant_eufemia",
+        "spoleto_caio_melisso",
+        "spoleto_rocca",
+        "spoleto_corso_garibaldi",
+        "spoleto_san_nicolo"
+      ]
+    }
   ],
   "locations": [
     {
@@ -52,8 +217,8 @@
     {
       "id": "gubbio_parco_ranghiasci",
       "name": "Parco Ranghiasci (Gubbio)",
-      "lat": 43.3550,
-      "lng": 12.5760,
+      "lat": 43.355,
+      "lng": 12.576,
       "description": "Ein beliebter Park, in dem Tommasi und Cecchini oft joggen gingen.",
       "background": "Ein malerischer englischer Landschaftsgarten am Hang von Gubbio, der in vielen Episoden für Spaziergänge, Jogging-Szenen und private Gespräche der Protagonisten genutzt wurde.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
@@ -85,7 +250,7 @@
     {
       "id": "spoleto_sant_eufemia",
       "name": "Basilica di Sant'Eufemia (Spoleto)",
-      "lat": 42.7330,
+      "lat": 42.733,
       "lng": 12.7369,
       "description": "Die Kirche von Don Matteo in Spoleto.",
       "background": "Diese beeindruckende romanische Basilika im Bischofspalast dient ab Staffel 9 als neue Kirche von Don Matteo. Viele innere Reflexionsszenen und Predigten wurden hier gedreht.",
@@ -113,6 +278,61 @@
       "background": "Die Festung und das beeindruckende mittelalterliche Aquädukt sind charakteristische Kulissen für Drohnenflüge und Landschaftsaufnahmen in Spoleto und verankern die Serie stark in der Region Umbrien.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Spoleto-ponte_delle_torri.jpg/960px-Spoleto-ponte_delle_torri.jpg",
       "source": "Blogging In Italy",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "gubbio_piazza_40_martiri",
+      "name": "Piazza dei 40 Martiri (Gubbio)",
+      "lat": 43.3524748,
+      "lng": 12.5769411,
+      "description": "Zentraler Platz in Gubbio, wo viele Szenen gedreht wurden.",
+      "background": "Auf der Piazza dei 40 Martiri befindet sich in der Serie das Krankenhaus der Stadt. Der Eingang zur Notaufnahme ist in vielen Episoden zu sehen. Auch die Kirche San Francesco, an der Don Matteo oft vorbeifährt, und die Logge dei Tiratori mit ihrem Markt befinden sich hier.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/San_Francesco_%28Gubbio%29.JPG/960px-San_Francesco_%28Gubbio%29.JPG",
+      "source": "Don Matteo Fanseite / Umbriatourism",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "gubbio_teatro_romano",
+      "name": "Teatro Romano (Gubbio)",
+      "lat": 43.3518835,
+      "lng": 12.5723764,
+      "description": "Das antike römische Amphitheater von Gubbio.",
+      "background": "Dieses beeindruckende antike Theater liegt etwas westlich des Stadtzentrums. Es war ein wiederkehrender Schauplatz der Serie in Gubbio, z.B. wenn sich Don Matteo mit Leuten unterhielt oder Cecchini und Anceschi joggen gingen.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
+      "source": "Don Matteo Fanseite",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "gubbio_basilica_sant_ubaldo",
+      "name": "Basilica di Sant'Ubaldo (Gubbio)",
+      "lat": 43.3563875,
+      "lng": 12.5850517,
+      "description": "Eine Basilika hoch über Gubbio.",
+      "background": "Hoch über Gubbio auf dem Monte Ingino gelegen. Gewidmet dem Schutzpatron von Gubbio. Hier finden in der Serie Szenen von Ankünften von Reisegruppen oder dramatische Festnahmen statt.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/187GubbioSUbaldo.jpg",
+      "source": "Don Matteo Fanseite",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "spoleto_corso_garibaldi",
+      "name": "Corso Garibaldi (Spoleto)",
+      "lat": 42.7389983,
+      "lng": 12.7366283,
+      "description": "Eine der Hauptstraßen der Altstadt von Spoleto.",
+      "background": "Hier wurden viele der berühmten Fahrradfahrten von Don Matteo und die Spaziergänge mit seinem Freund, dem Wachtmeister Cecchini, ab Staffel 9 gedreht.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
+      "source": "Umbriatourism",
+      "reliability": "Hoch"
+    },
+    {
+      "id": "spoleto_san_nicolo",
+      "name": "Monumentalkomplex von San Nicolò (Spoleto)",
+      "lat": 42.737038,
+      "lng": 12.736481,
+      "description": "Die Grundschule von Spoleto in der Serie.",
+      "background": "Der Monumentalkomplex von San Nicolò diente ab Staffel 9 als Kulisse für die Grundschule Maestre Pie Filippini. Hier wurden alle Szenen gedreht, die in der Grundschule spielten.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/San_Nicol%C3%B2_tribuna.jpg",
+      "source": "Umbriatourism",
       "reliability": "Hoch"
     }
   ]
