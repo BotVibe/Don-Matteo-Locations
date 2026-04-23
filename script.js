@@ -102,14 +102,22 @@ function addMarker(location) {
     // Custom Icon im Carabinieri Look (optional, hier Standard mit Farbe)
     const marker = L.marker([location.lat, location.lng]).addTo(map);
 
-    const popupContent = `
-        <div style="text-align:center;">
-            <h3>${location.name}</h3>
-            <button class="popup-btn" onclick="showDetails('${location.id}')">Details ansehen</button>
-        </div>
-    `;
+    const container = document.createElement('div');
+    container.style.textAlign = 'center';
 
-    marker.bindPopup(popupContent);
+    const title = document.createElement('h3');
+    title.textContent = location.name;
+    container.appendChild(title);
+
+    const button = document.createElement('button');
+    button.className = 'popup-btn';
+    button.textContent = 'Details ansehen';
+    button.addEventListener('click', () => {
+        showDetails(location.id);
+    });
+    container.appendChild(button);
+
+    marker.bindPopup(container);
     markers.push(marker);
 }
 
