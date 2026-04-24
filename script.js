@@ -83,9 +83,10 @@ function showSeasonLocations(seasonId) {
 
     const bounds = L.latLngBounds();
     let locationsShown = 0;
+    const seasonLocationIds = new Set(season.location_ids);
 
     appData.locations.forEach(loc => {
-        if (season.location_ids.includes(loc.id)) {
+        if (seasonLocationIds.has(loc.id)) {
             addMarker(loc);
             bounds.extend([loc.lat, loc.lng]);
             locationsShown++;
