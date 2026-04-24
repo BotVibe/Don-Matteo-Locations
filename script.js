@@ -1,6 +1,6 @@
 let map;
 let markers = [];
-let appData = null;
+window.appData = null;
 
 // Initialisiere die Karte
 function initMap() {
@@ -20,7 +20,7 @@ function initMap() {
 async function loadData() {
     try {
         const response = await fetch('data.json');
-        appData = await response.json();
+        window.appData = await response.json();
 
         createTimeline();
         showAllLocations();
@@ -39,7 +39,7 @@ function setActiveButton(button) {
 function createTimeline() {
     const timeline = document.getElementById('timeline');
 
-    appData.seasons.forEach(season => {
+    window.appData.seasons.forEach(season => {
         const btn = document.createElement('button');
         btn.className = 'season-btn';
         btn.textContent = season.name;
@@ -66,12 +66,12 @@ function showAllLocations() {
 
     const bounds = L.latLngBounds();
 
-    appData.locations.forEach(loc => {
+    window.appData.locations.forEach(loc => {
         addMarker(loc);
         bounds.extend([loc.lat, loc.lng]);
     });
 
-    if (appData.locations.length > 0) {
+    if (window.appData.locations.length > 0) {
         map.fitBounds(bounds, { padding: [50, 50] });
     }
 }
@@ -80,15 +80,15 @@ function showAllLocations() {
 function showSeasonLocations(seasonId) {
     clearMarkers();
 
-    const season = appData.seasons.find(s => s.id === seasonId);
+    const season = window.appData.seasons.find(s => s.id === seasonId);
     if (!season) return;
 
     const bounds = L.latLngBounds();
     let locationsShown = 0;
     const seasonLocationIds = new Set(season.location_ids);
 
-    appData.locations.forEach(loc => {
-        if (seasonLocationIds.has(loc.id)) {
+    window.appData.locations.forEach(loc => {
+        if (season.location_ids.includes(loc.id)) {
             addMarker(loc);
             bounds.extend([loc.lat, loc.lng]);
             locationsShown++;
@@ -132,7 +132,7 @@ function clearMarkers() {
 
 // Zeige Details zu einem Ort
 window.showDetails = function(locationId) {
-    const loc = appData.locations.find(l => l.id === locationId);
+    const loc = window.appData.locations.find(l => l.id === locationId);
     if (!loc) return;
 
     document.getElementById('details-name').textContent = loc.name;
