@@ -29,6 +29,12 @@ async function loadData() {
     }
 }
 
+// Hilfsfunktion zum Setzen des aktiven Buttons
+function setActiveButton(button) {
+    document.querySelectorAll('.season-btn').forEach(b => b.classList.remove('active'));
+    button.classList.add('active');
+}
+
 // Erstelle den Zeitstrahl
 function createTimeline() {
     const timeline = document.getElementById('timeline');
@@ -40,10 +46,7 @@ function createTimeline() {
         btn.dataset.seasonId = season.id;
 
         btn.addEventListener('click', () => {
-            // Update active state
-            document.querySelectorAll('.season-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
+            setActiveButton(btn);
             showSeasonLocations(season.id);
         });
 
@@ -52,8 +55,7 @@ function createTimeline() {
 
     // Event Listener für "Alle" Button
     document.querySelector('[data-season="all"]').addEventListener('click', (e) => {
-        document.querySelectorAll('.season-btn').forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
+        setActiveButton(e.target);
         showAllLocations();
     });
 }
