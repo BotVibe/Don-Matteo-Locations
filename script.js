@@ -29,6 +29,12 @@ async function loadData() {
     }
 }
 
+// Hilfsfunktion zum Setzen des aktiven Buttons
+function setActiveButton(button) {
+    document.querySelectorAll('.season-btn').forEach(b => b.classList.remove('active'));
+    button.classList.add('active');
+}
+
 // Erstelle den Zeitstrahl
 function createTimeline() {
     const timeline = document.getElementById('timeline');
@@ -40,10 +46,7 @@ function createTimeline() {
         btn.dataset.seasonId = season.id;
 
         btn.addEventListener('click', () => {
-            // Update active state
-            document.querySelectorAll('.season-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
+            setActiveButton(btn);
             showSeasonLocations(season.id);
         });
 
@@ -52,8 +55,7 @@ function createTimeline() {
 
     // Event Listener für "Alle" Button
     document.querySelector('[data-season="all"]').addEventListener('click', (e) => {
-        document.querySelectorAll('.season-btn').forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
+        setActiveButton(e.target);
         showAllLocations();
     });
 }
@@ -83,6 +85,7 @@ function showSeasonLocations(seasonId) {
 
     const bounds = L.latLngBounds();
     let locationsShown = 0;
+    const seasonLocationIds = new Set(season.location_ids);
 
     window.appData.locations.forEach(loc => {
         if (season.location_ids.includes(loc.id)) {
@@ -102,14 +105,22 @@ function addMarker(location) {
     // Custom Icon im Carabinieri Look (optional, hier Standard mit Farbe)
     const marker = L.marker([location.lat, location.lng]).addTo(map);
 
-    const popupContent = `
-        <div style="text-align:center;">
-            <h3>${location.name}</h3>
-            <button class="popup-btn" onclick="showDetails('${location.id}')">Details ansehen</button>
-        </div>
-    `;
+    const container = document.createElement('div');
+    container.style.textAlign = 'center';
 
-    marker.bindPopup(popupContent);
+    const title = document.createElement('h3');
+    title.textContent = location.name;
+    container.appendChild(title);
+
+    const button = document.createElement('button');
+    button.className = 'popup-btn';
+    button.textContent = 'Details ansehen';
+    button.addEventListener('click', () => {
+        showDetails(location.id);
+    });
+    container.appendChild(button);
+
+    marker.bindPopup(container);
     markers.push(marker);
 }
 
