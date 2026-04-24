@@ -35,3 +35,42 @@ Wenn du Visual Studio Code verwendest, kannst du die Erweiterung "Live Server" i
 ## Datenquellen
 
 Die Bilder, die in der Detailansicht verwendet werden, stammen aus der [Wikimedia Commons](https://commons.wikimedia.org/) und sind frei verwendbar. Die Geodaten und Beschreibungen basieren auf den bekannten Drehorten der Serie.
+
+## Deployment auf GitHub Pages
+
+Dieses Projekt ist so konfiguriert, dass es automatisch und kostenlos über **GitHub Pages** veröffentlicht werden kann.
+
+### Wie das Deployment funktioniert
+
+Es wurde ein GitHub Actions Workflow (`.github/workflows/deploy.yml`) eingerichtet. Dieser Workflow sorgt dafür, dass die Website **automatisch aktualisiert wird, sobald du Änderungen in den Branch namens `deploy` pushst oder dorthin mergst**.
+
+**Ablauf für Aktualisierungen:**
+1. Du entwickelst neue Funktionen oder änderst Daten auf deinem Haupt-Branch (z.B. `main` oder `master`).
+2. Wenn du mit den Änderungen zufrieden bist, mergst du diese Änderungen in den Branch `deploy` (oder pushst direkt in `deploy`).
+3. GitHub erkennt das Update im `deploy`-Branch und startet automatisch im Hintergrund die Veröffentlichung. Nach 1-2 Minuten ist deine Website online aktualisiert.
+
+### GitHub-Einstellungen vornehmen (Einmalig)
+
+Damit das Deployment funktioniert, musst du dies einmalig in den Repository-Einstellungen aktivieren:
+1. Gehe auf die GitHub-Seite deines Repositories.
+2. Klicke oben auf **Settings** (Einstellungen).
+3. Wähle im Menü auf der linken Seite **Pages**.
+4. Unter dem Punkt **Build and deployment** > **Source** musst du im Dropdown-Menü **GitHub Actions** auswählen.
+
+*(Hinweis: Falls du noch keinen `deploy`-Branch in deinem Repository erstellt hast, erstelle ihn bitte aus deinem Haupt-Branch heraus).*
+
+### Unter welcher Domain ist die Seite erreichbar?
+
+#### 1. Die kostenlose GitHub-Domain
+Standardmäßig erhält deine Website eine kostenlose Domain von GitHub, die sich aus deinem Benutzernamen (bzw. Organisationsnamen) und dem Repository-Namen zusammensetzt:
+`https://<dein-github-benutzername>.github.io/<repository-name>/`
+*(Beispiel: `https://maxmustermann.github.io/don-matteo-map/`)*
+
+#### 2. Eine eigene Domain verwenden (Custom Domain)
+Du kannst auch problemlos eine eigene, von dir gekaufte Domain (z.B. `www.meine-coole-karte.de`) verwenden.
+
+**So richtest du eine eigene Domain ein:**
+1. **Beim Domain-Anbieter (z.B. Strato, Ionos, etc.):** Du musst in den DNS-Einstellungen deiner Domain spezielle Einträge (A-Records für die Root-Domain und/oder einen CNAME-Record für Subdomains wie `www`) auf die Server von GitHub verweisen lassen. Die exakten IP-Adressen findest du in der [offiziellen GitHub-Dokumentation](https://docs.github.com/de/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+2. **In GitHub:** Gehe wieder zu **Settings** > **Pages**.
+3. Trage unter **Custom domain** deinen Domainnamen ein und klicke auf "Save". GitHub führt daraufhin einen Check durch, ob die DNS-Einstellungen korrekt sind.
+4. Es wird dringend empfohlen, danach das Häkchen bei **Enforce HTTPS** zu setzen, damit deine Seite eine sichere Verbindung bietet (GitHub erstellt das Zertifikat automatisch und kostenlos).
