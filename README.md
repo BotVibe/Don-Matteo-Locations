@@ -36,6 +36,19 @@ Wenn du Visual Studio Code verwendest, kannst du die Erweiterung "Live Server" i
 
 Die Bilder, die in der Detailansicht verwendet werden, stammen aus der [Wikimedia Commons](https://commons.wikimedia.org/) und sind frei verwendbar. Die Geodaten und Beschreibungen basieren auf den bekannten Drehorten der Serie.
 
+## Tests (End-to-End)
+
+Das Projekt beinhaltet automatisierte Frontend-Tests mit **Python und Playwright**, um sicherzustellen, dass die Kernfunktionen fehlerfrei arbeiten.
+
+### Tests lokal ausführen
+Um die Tests auszuführen, stelle sicher, dass du Python und das Playwright-Paket installiert hast. Führe dann folgenden Befehl im Hauptverzeichnis aus:
+
+```bash
+python tests/test_show_details.py
+```
+
+*Hinweis: Während des Testlaufs wird ein lokaler Server auf Port 8000 gestartet. Die Tests sind so konfiguriert, dass sie externe Anfragen (wie Kacheln oder Schriftarten) blockieren, um Timeouts bei fehlender Internetverbindung zu vermeiden.*
+
 ## Deployment auf GitHub Pages
 
 Dieses Projekt ist so konfiguriert, dass es automatisch und kostenlos über **GitHub Pages** veröffentlicht werden kann.
