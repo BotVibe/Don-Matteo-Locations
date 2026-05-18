@@ -55,12 +55,12 @@ Dieses Projekt ist so konfiguriert, dass es automatisch und kostenlos über **Gi
 
 ### Wie das Deployment funktioniert
 
-Es wurde ein GitHub Actions Workflow (`.github/workflows/deploy.yml`) eingerichtet. Dieser Workflow sorgt dafür, dass die Website **automatisch aktualisiert wird, sobald du Änderungen in den Branch namens `deploy` pushst oder dorthin mergst**.
+Es wurde ein GitHub Actions Workflow (`.github/workflows/deploy.yml`) eingerichtet. Dieser Workflow sorgt dafür, dass die Website **automatisch aktualisiert wird, sobald du Änderungen in den Branch namens `master` pushst oder dorthin mergst**.
 
 **Ablauf für Aktualisierungen:**
-1. Du entwickelst neue Funktionen oder änderst Daten auf deinem Haupt-Branch (z.B. `main` oder `master`).
-2. Wenn du mit den Änderungen zufrieden bist, mergst du diese Änderungen in den Branch `deploy` (oder pushst direkt in `deploy`).
-3. GitHub erkennt das Update im `deploy`-Branch und startet automatisch im Hintergrund die Veröffentlichung. Nach 1-2 Minuten ist deine Website online aktualisiert.
+1. Du entwickelst neue Funktionen oder änderst Daten direkt auf deinem Haupt-Branch (`master`).
+2. Sobald du deine Änderungen in den `master`-Branch pusht (oder einen Pull Request dorthin mergst), erkennt GitHub das Update und startet automatisch im Hintergrund die Veröffentlichung.
+3. Nach 1-2 Minuten ist deine Website online aktualisiert.
 
 ### GitHub-Einstellungen vornehmen (Einmalig)
 
@@ -69,8 +69,6 @@ Damit das Deployment funktioniert, musst du dies einmalig in den Repository-Eins
 2. Klicke oben auf **Settings** (Einstellungen).
 3. Wähle im Menü auf der linken Seite **Pages**.
 4. Unter dem Punkt **Build and deployment** > **Source** musst du im Dropdown-Menü **GitHub Actions** auswählen.
-
-*(Hinweis: Falls du noch keinen `deploy`-Branch in deinem Repository erstellt hast, erstelle ihn bitte aus deinem Haupt-Branch heraus).*
 
 ### Unter welcher Domain ist die Seite erreichbar?
 

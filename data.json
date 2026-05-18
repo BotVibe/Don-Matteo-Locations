@@ -5,11 +5,15 @@
       "name": "Staffel 1 (2000)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello",
+        "umbria_assisi"
       ]
     },
     {
@@ -17,11 +21,14 @@
       "name": "Staffel 2 (2001)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello"
       ]
     },
     {
@@ -29,12 +36,15 @@
       "name": "Staffel 3 (2002)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_parco_ranghiasci",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello"
       ]
     },
     {
@@ -42,12 +52,17 @@
       "name": "Staffel 4 (2004)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_parco_ranghiasci",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello",
+        "roma_vaticano",
+        "umbria_narni"
       ]
     },
     {
@@ -55,12 +70,16 @@
       "name": "Staffel 5 (2006)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_parco_ranghiasci",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello",
+        "umbria_perugia"
       ]
     },
     {
@@ -68,12 +87,15 @@
       "name": "Staffel 6 (2008)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_parco_ranghiasci",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello"
       ]
     },
     {
@@ -81,12 +103,15 @@
       "name": "Staffel 7 (2009)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_parco_ranghiasci",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello"
       ]
     },
     {
@@ -94,12 +119,16 @@
       "name": "Staffel 8 (2011)",
       "location_ids": [
         "gubbio_piazza_grande",
+        "gubbio_palazzo_dei_consoli",
         "gubbio_san_giovanni",
         "gubbio_san_marziale",
         "gubbio_parco_ranghiasci",
         "gubbio_piazza_40_martiri",
         "gubbio_teatro_romano",
-        "gubbio_basilica_sant_ubaldo"
+        "gubbio_basilica_sant_ubaldo",
+        "gubbio_funivia_colle_eletto",
+        "roma_formello",
+        "roma_campagnano"
       ]
     },
     {
@@ -111,7 +140,10 @@
         "spoleto_sant_eufemia",
         "spoleto_caio_melisso",
         "spoleto_corso_garibaldi",
-        "spoleto_san_nicolo"
+        "spoleto_san_nicolo",
+        "spoleto_ponte_delle_torri",
+        "spoleto_rocca",
+        "roma_formello"
       ]
     },
     {
@@ -122,9 +154,11 @@
         "spoleto_palazzo_bufalini",
         "spoleto_sant_eufemia",
         "spoleto_caio_melisso",
-        "spoleto_rocca",
         "spoleto_corso_garibaldi",
-        "spoleto_san_nicolo"
+        "spoleto_san_nicolo",
+        "spoleto_ponte_delle_torri",
+        "spoleto_rocca",
+        "roma_formello"
       ]
     },
     {
@@ -135,9 +169,12 @@
         "spoleto_palazzo_bufalini",
         "spoleto_sant_eufemia",
         "spoleto_caio_melisso",
-        "spoleto_rocca",
         "spoleto_corso_garibaldi",
-        "spoleto_san_nicolo"
+        "spoleto_san_nicolo",
+        "spoleto_ponte_delle_torri",
+        "spoleto_rocca",
+        "roma_formello",
+        "umbria_abbazia_san_pietro"
       ]
     },
     {
@@ -148,9 +185,11 @@
         "spoleto_palazzo_bufalini",
         "spoleto_sant_eufemia",
         "spoleto_caio_melisso",
-        "spoleto_rocca",
         "spoleto_corso_garibaldi",
-        "spoleto_san_nicolo"
+        "spoleto_san_nicolo",
+        "spoleto_ponte_delle_torri",
+        "spoleto_rocca",
+        "roma_formello"
       ]
     },
     {
@@ -161,9 +200,12 @@
         "spoleto_palazzo_bufalini",
         "spoleto_sant_eufemia",
         "spoleto_caio_melisso",
-        "spoleto_rocca",
         "spoleto_corso_garibaldi",
-        "spoleto_san_nicolo"
+        "spoleto_san_nicolo",
+        "spoleto_ponte_delle_torri",
+        "spoleto_rocca",
+        "roma_formello",
+        "roma_ostia"
       ]
     },
     {
@@ -174,23 +216,66 @@
         "spoleto_palazzo_bufalini",
         "spoleto_sant_eufemia",
         "spoleto_caio_melisso",
-        "spoleto_rocca",
         "spoleto_corso_garibaldi",
-        "spoleto_san_nicolo"
+        "spoleto_san_nicolo",
+        "spoleto_ponte_delle_torri",
+        "spoleto_rocca",
+        "roma_formello"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Staffel 15 (2026)",
+      "location_ids": [
+        "spoleto_duomo",
+        "spoleto_palazzo_bufalini",
+        "spoleto_sant_eufemia",
+        "spoleto_caio_melisso",
+        "spoleto_corso_garibaldi",
+        "spoleto_san_nicolo",
+        "spoleto_ponte_delle_torri",
+        "spoleto_rocca",
+        "roma_formello",
+        "tuscia_nepi_monterosi"
       ]
     }
   ],
   "locations": [
     {
       "id": "gubbio_piazza_grande",
-      "name": "Piazza Grande & Palazzo Pretorio (Gubbio)",
+      "name": "Piazza Grande (Gubbio)",
       "lat": 43.3533,
       "lng": 12.5786,
-      "description": "Zentraler Schauplatz der ersten 8 Staffeln. Hier befand sich die Kaserne der Carabinieri.",
-      "background": "In der Serie diente der Palazzo Pretorio auf der Piazza Grande für die Innenaufnahmen der Kaserne von Maresciallo Cecchini und Capitano Tommasi. Die Piazza selbst wurde für unzählige Außenaufnahmen genutzt.",
+      "description": "Zentraler sozialer Treffpunkt und primäre Agora. Austragungsort der ikonischen Schachpartien zwischen Don Matteo und Cecchini.",
+      "background": "Durch gewaltige architektonische Stützmauern an den Hang des Monte Ingino gebaut. Etabliert die visuelle Welt der Staffeln 1 bis 8.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
-      "source": "Italy for Movies / offizielle Produktionsinfos",
-      "reliability": "Hoch (Offizielle Drehorte)"
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
+    },
+    {
+      "id": "gubbio_palazzo_dei_consoli",
+      "name": "Palazzo dei Consoli (Gubbio)",
+      "lat": 43.3535,
+      "lng": 12.5781,
+      "description": "Gotische Monumentalarchitektur im Hintergrund der Piazza Grande.",
+      "background": "Etablierte die weltliche Ordnung und das Gesetz in der Bildsprache der ersten 8 Staffeln.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
+    },
+    {
+      "id": "gubbio_funivia_colle_eletto",
+      "name": "Funivia Colle Eletto (Gubbio)",
+      "lat": 43.3541,
+      "lng": 12.5802,
+      "description": "Käfig-Seilbahn zum Monte Ingino.",
+      "background": "Wurde in der Bildsprache gezielt genutzt, um spektakuläre vertikale Kamerafahrten zu generieren und die topographische Enge der Gassen aufzubrechen.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.moretimetotravel.com/visiting-gubbio-with-don-matteo/"
     },
     {
       "id": "gubbio_san_giovanni",
@@ -198,10 +283,11 @@
       "lat": 43.3524,
       "lng": 12.5756,
       "description": "Die Kirche von Don Matteo in den ersten Staffeln (Außenaufnahmen).",
-      "background": "Diese Kirche aus dem 13. Jahrhundert wurde als Außenansicht für Don Matteos Pfarrei in Gubbio verwendet. Sie ist eines der bekanntesten gotischen Bauwerke der Stadt.",
+      "background": "Gotisches Bauwerk aus dem 13. Jahrhundert.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Church_of_San_Giovanni_in_Gubbio_view_from_outside.JPG/960px-Church_of_San_Giovanni_in_Gubbio_view_from_outside.JPG",
       "source": "Italy for Movies",
-      "reliability": "Hoch"
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
     },
     {
       "id": "gubbio_san_marziale",
@@ -209,131 +295,308 @@
       "lat": 43.3551,
       "lng": 12.5804,
       "description": "Innenaufnahmen der Kirche von Don Matteo.",
-      "background": "Während die San Giovanni Kirche für Außenaufnahmen genutzt wurde, diente die romanische Kirche San Marziale als Kulisse für die meisten Predigten und Innenaufnahmen von Don Matteo in Gubbio.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
+      "background": "Romanische Kirche, Kulisse für die Predigten von Don Matteo in Gubbio.",
+      "image": "",
       "source": "Italy for Movies",
-      "reliability": "Hoch"
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
     },
     {
       "id": "gubbio_parco_ranghiasci",
       "name": "Parco Ranghiasci (Gubbio)",
       "lat": 43.355,
       "lng": 12.576,
-      "description": "Ein beliebter Park, in dem Tommasi und Cecchini oft joggen gingen.",
-      "background": "Ein malerischer englischer Landschaftsgarten am Hang von Gubbio, der in vielen Episoden für Spaziergänge, Jogging-Szenen und private Gespräche der Protagonisten genutzt wurde.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
+      "description": "Englischer Landschaftsgarten für private Gespräche und Jogging-Szenen.",
+      "background": "Häufig genutzt ab Staffel 3.",
+      "image": "",
       "source": "Italy for Movies",
-      "reliability": "Hoch"
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
+    },
+    {
+      "id": "gubbio_piazza_40_martiri",
+      "name": "Piazza dei 40 Martiri (Gubbio)",
+      "lat": 43.3524,
+      "lng": 12.5769,
+      "description": "Standort des Krankenhauses und der Kirche San Francesco in der Serie.",
+      "background": "Zentraler Platz am Fuß der Altstadt.",
+      "image": "",
+      "source": "Don Matteo Fanseite",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
+    },
+    {
+      "id": "gubbio_teatro_romano",
+      "name": "Teatro Romano (Gubbio)",
+      "lat": 43.3518,
+      "lng": 12.5723,
+      "description": "Antikes römisches Amphitheater.",
+      "background": "Wiederkehrender Schauplatz für vertrauliche Gespräche und Sport.",
+      "image": "",
+      "source": "Don Matteo Fanseite",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.moretimetotravel.com/visiting-gubbio-with-don-matteo/"
+    },
+    {
+      "id": "gubbio_basilica_sant_ubaldo",
+      "name": "Basilica di Sant'Ubaldo (Gubbio)",
+      "lat": 43.3563,
+      "lng": 12.585,
+      "description": "Basilika auf dem Monte Ingino.",
+      "background": "Genutzt für dramatische Festnahmen und Reisegruppen.",
+      "image": "",
+      "source": "Don Matteo Fanseite",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.moretimetotravel.com/visiting-gubbio-with-don-matteo/"
     },
     {
       "id": "spoleto_duomo",
-      "name": "Duomo di Spoleto (Piazza del Duomo)",
+      "name": "Piazza del Duomo & Cattedrale Santa Maria Assunta (Spoleto)",
       "lat": 42.7337,
       "lng": 12.7388,
-      "description": "Der wichtigste Schauplatz ab Staffel 9.",
-      "background": "Nach dem Umzug der Serie nach Spoleto wurde die Piazza del Duomo zum neuen Zentrum der Serie. Hier befinden sich das Pfarrhaus, die neue Carabinieri-Kaserne und das Sprechzimmer. Der Dom selbst ist im Hintergrund zahlreicher Szenen zu sehen.",
+      "description": "Hauptdrehort der Serie ab Staffel 9. Große Freitreppe und rosafarbene Renaissance-Fassade.",
+      "background": "Die architektonische Disposition erzwingt weite, offene Kameraeinstellungen. Zentrum der sozialen Interaktionen.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
-      "source": "UmbriaSì / UmbriaTourism",
-      "reliability": "Hoch"
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.adagioumbro.it/don-matteo-in-spoleto-september-umbria/"
     },
     {
       "id": "spoleto_palazzo_bufalini",
       "name": "Palazzo Bufalini (Spoleto)",
       "lat": 42.7338,
       "lng": 12.7378,
-      "description": "Außenaufnahmen der Carabinieri-Kaserne ab Staffel 9.",
-      "background": "Der Palast grenzt an die Piazza del Duomo und dient in der Fiktion als Kaserne der Carabinieri von Spoleto.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
-      "source": "UmbriaSì",
-      "reliability": "Hoch"
+      "description": "Außenfassade dient als visuelle Repräsentation der Carabinieri-Kaserne.",
+      "background": "Liegt direkt an der Piazza del Duomo, komprimiert Staat und Religion auf einen Platz.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.adagioumbro.it/don-matteo-in-spoleto-september-umbria/"
     },
     {
       "id": "spoleto_sant_eufemia",
       "name": "Basilica di Sant'Eufemia (Spoleto)",
       "lat": 42.733,
       "lng": 12.7369,
-      "description": "Die Kirche von Don Matteo in Spoleto.",
-      "background": "Diese beeindruckende romanische Basilika im Bischofspalast dient ab Staffel 9 als neue Kirche von Don Matteo. Viele innere Reflexionsszenen und Predigten wurden hier gedreht.",
+      "description": "Romanische Kirche im erzbischöflichen Palast. Ort der intimen, sakralen Szenen.",
+      "background": "Räumliche Austerität reflektiert das innere Wesen von Don Matteo/Massimo. Extrem gegensätzlich zur opulenten Domfassade.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chiesa_Sant%27Eufemia_%28Spoleto%29.jpg/960px-Chiesa_Sant%27Eufemia_%28Spoleto%29.jpg",
-      "source": "UmbriaSì",
-      "reliability": "Hoch"
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.adagioumbro.it/don-matteo-in-spoleto-september-umbria/"
     },
     {
       "id": "spoleto_caio_melisso",
       "name": "Teatro Caio Melisso (Spoleto)",
       "lat": 42.7339,
       "lng": 12.7383,
-      "description": "Das Sprechzimmer des Gefängnisses.",
-      "background": "Das älteste Theater von Spoleto wurde für die Serie kreativ umfunktioniert und dient als Gefängnis-Sprechzimmer, in dem Don Matteo häufig mit Verdächtigen spricht.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
-      "source": "UmbriaSì",
-      "reliability": "Hoch"
+      "description": "Innenräume des historischen Logentheaters werden als Gefängnis-Besucherraum inszeniert.",
+      "background": "Beispiel für starke semantische Entfremdung der realen Architektur.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
     },
     {
       "id": "spoleto_rocca",
-      "name": "Rocca Albornoziana & Ponte delle Torri (Spoleto)",
+      "name": "Rocca Albornoziana (Spoleto)",
       "lat": 42.7326,
       "lng": 12.7419,
-      "description": "Häufig im Hintergrund gezeigte Wahrzeichen.",
-      "background": "Die Festung und das beeindruckende mittelalterliche Aquädukt sind charakteristische Kulissen für Drohnenflüge und Landschaftsaufnahmen in Spoleto und verankern die Serie stark in der Region Umbrien.",
+      "description": "Päpstliche Festung aus dem 14. Jahrhundert.",
+      "background": "Genutzt für weite Panoramen und den Startpunkt des 'Don Matteo Walk'.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.adagioumbro.it/don-matteo-in-spoleto-september-umbria/"
+    },
+    {
+      "id": "spoleto_ponte_delle_torri",
+      "name": "Ponte delle Torri (Spoleto)",
+      "lat": 42.732,
+      "lng": 12.7425,
+      "description": "230 Meter langes Aquädukt aus dem 13. Jahrhundert.",
+      "background": "Visuelles Leitmotiv für dramatische Übergänge und konfrontative Höhepunkte.",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Spoleto-ponte_delle_torri.jpg/960px-Spoleto-ponte_delle_torri.jpg",
-      "source": "Blogging In Italy",
-      "reliability": "Hoch"
-    },
-    {
-      "id": "gubbio_piazza_40_martiri",
-      "name": "Piazza dei 40 Martiri (Gubbio)",
-      "lat": 43.3524748,
-      "lng": 12.5769411,
-      "description": "Zentraler Platz in Gubbio, wo viele Szenen gedreht wurden.",
-      "background": "Auf der Piazza dei 40 Martiri befindet sich in der Serie das Krankenhaus der Stadt. Der Eingang zur Notaufnahme ist in vielen Episoden zu sehen. Auch die Kirche San Francesco, an der Don Matteo oft vorbeifährt, und die Logge dei Tiratori mit ihrem Markt befinden sich hier.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/San_Francesco_%28Gubbio%29.JPG/960px-San_Francesco_%28Gubbio%29.JPG",
-      "source": "Don Matteo Fanseite / Umbriatourism",
-      "reliability": "Hoch"
-    },
-    {
-      "id": "gubbio_teatro_romano",
-      "name": "Teatro Romano (Gubbio)",
-      "lat": 43.3518835,
-      "lng": 12.5723764,
-      "description": "Das antike römische Amphitheater von Gubbio.",
-      "background": "Dieses beeindruckende antike Theater liegt etwas westlich des Stadtzentrums. Es war ein wiederkehrender Schauplatz der Serie in Gubbio, z.B. wenn sich Don Matteo mit Leuten unterhielt oder Cecchini und Anceschi joggen gingen.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg",
-      "source": "Don Matteo Fanseite",
-      "reliability": "Hoch"
-    },
-    {
-      "id": "gubbio_basilica_sant_ubaldo",
-      "name": "Basilica di Sant'Ubaldo (Gubbio)",
-      "lat": 43.3563875,
-      "lng": 12.5850517,
-      "description": "Eine Basilika hoch über Gubbio.",
-      "background": "Hoch über Gubbio auf dem Monte Ingino gelegen. Gewidmet dem Schutzpatron von Gubbio. Hier finden in der Serie Szenen von Ankünften von Reisegruppen oder dramatische Festnahmen statt.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/187GubbioSUbaldo.jpg",
-      "source": "Don Matteo Fanseite",
-      "reliability": "Hoch"
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.adagioumbro.it/don-matteo-in-spoleto-september-umbria/"
     },
     {
       "id": "spoleto_corso_garibaldi",
       "name": "Corso Garibaldi (Spoleto)",
-      "lat": 42.7389983,
-      "lng": 12.7366283,
-      "description": "Eine der Hauptstraßen der Altstadt von Spoleto.",
-      "background": "Hier wurden viele der berühmten Fahrradfahrten von Don Matteo und die Spaziergänge mit seinem Freund, dem Wachtmeister Cecchini, ab Staffel 9 gedreht.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Duomo_Spoleto_11_05_2018_02.jpg/960px-Duomo_Spoleto_11_05_2018_02.jpg",
+      "lat": 42.7389,
+      "lng": 12.7366,
+      "description": "Hauptstraße der Altstadt für Fahrradfahrten und Dialogszenen.",
+      "background": "Oft im Zusammenspiel mit den unzähligen Rolltreppen der Stadt, die in der Serie jedoch ausgeblendet werden.",
+      "image": "",
       "source": "Umbriatourism",
-      "reliability": "Hoch"
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
     },
     {
       "id": "spoleto_san_nicolo",
-      "name": "Monumentalkomplex von San Nicolò (Spoleto)",
-      "lat": 42.737038,
-      "lng": 12.736481,
-      "description": "Die Grundschule von Spoleto in der Serie.",
-      "background": "Der Monumentalkomplex von San Nicolò diente ab Staffel 9 als Kulisse für die Grundschule Maestre Pie Filippini. Hier wurden alle Szenen gedreht, die in der Grundschule spielten.",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/San_Nicol%C3%B2_tribuna.jpg",
+      "name": "San Nicolò (Spoleto)",
+      "lat": 42.737,
+      "lng": 12.7364,
+      "description": "Dient als Grundschule Maestre Pie Filippini in der Serie.",
+      "background": "Monumentalkomplex für schulische Handlungsstränge.",
+      "image": "",
       "source": "Umbriatourism",
-      "reliability": "Hoch"
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/en/w/tv-locations-in-umbria"
+    },
+    {
+      "id": "roma_formello",
+      "name": "Lux Vide Studios (Formello, Rom)",
+      "lat": 42.0833,
+      "lng": 12.4,
+      "description": "Konstruktion sämtlicher Innenräume: Carabinieri-Büros, Pfarrhaus, Wohnungen.",
+      "background": "Das logistische Rückgrat der Serie zur Kontrolle über Beleuchtung und Akustik, fernab von Umbrien.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse / Lux Vide",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.italyformovies.it/news/detail/2924/don-matteo-15-lumbria-da-25-anni-cuore-pulsante-della-serie"
+    },
+    {
+      "id": "roma_vaticano",
+      "name": "Città del Vaticano (Vatikanstadt)",
+      "lat": 41.9029,
+      "lng": 12.4534,
+      "description": "Physischer Drehort in Staffel 4.",
+      "background": "Illustriert die komplexe Hierarchie der klerikalen Welt und visualisiert Don Matteos Verbindung nach Rom.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.italyformovies.it/don-matteo"
+    },
+    {
+      "id": "roma_campagnano",
+      "name": "Campagnano di Roma (Latium)",
+      "lat": 42.1408,
+      "lng": 12.3831,
+      "description": "Ländlicher peripherer Handlungsort.",
+      "background": "Genutzt in Staffel 8 zur Variierung des Kriminalmilieus.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.italyformovies.it/don-matteo"
+    },
+    {
+      "id": "roma_ostia",
+      "name": "Lungomare Amerigo Vespucci (Ostia, Rom)",
+      "lat": 41.7306,
+      "lng": 12.2789,
+      "description": "Strandpromenade; Ort der Staffelübergabe von Terence Hill zu Raoul Bova (Staffel 13).",
+      "background": "Liminaler Raum: Das offene Meer symbolisiert den Wandel der Generationen und das Ende der Hill-Ära.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://canaledieci.it/2021/10/25/don-matteo-sbarca-lungomare-di-ostia/"
+    },
+    {
+      "id": "tuscia_nepi_monterosi",
+      "name": "Nepi und Monterosi (Tuscia, Latium)",
+      "lat": 42.2425,
+      "lng": 12.3458,
+      "description": "Neue Außendrehorte zur Erweiterung der Motive in Staffel 15.",
+      "background": "Integration der historischen Landschaften des nördlichen Latium.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.fanpage.it/stile-e-trend/viaggi/don-matteo-15-le-location-della-serie-rai-con-raoul-bova-e-nino-frassica/"
+    },
+    {
+      "id": "umbria_assisi",
+      "name": "Assisi (Umbrien)",
+      "lat": 43.0702,
+      "lng": 12.6173,
+      "description": "Ort der Rückkehr aus der Mission in der allerersten Episode (Staffel 1).",
+      "background": "Subliminale Verknüpfung der Figur Don Matteo mit dem historischen Erbe des Heiligen Franziskus.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/"
+    },
+    {
+      "id": "umbria_abbazia_san_pietro",
+      "name": "Abbazia di San Pietro in Valle (Valnerina)",
+      "lat": 42.6653,
+      "lng": 12.8335,
+      "description": "Isolierter Handlungsort in Staffel 11.",
+      "background": "Austragungsort eines Locked-Room-Krimis um ein Galileo-Manuskript. Instrumentalisierung architektonischer Isolation.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/"
+    },
+    {
+      "id": "umbria_perugia",
+      "name": "Perugia (Umbrien)",
+      "lat": 43.1107,
+      "lng": 12.3908,
+      "description": "Punktuelle Aufnahmen zur Erweiterung der städtischen Diversität, besonders in Staffel 5.",
+      "background": "Regionalhauptstadt Umbriens.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/"
+    },
+    {
+      "id": "umbria_narni",
+      "name": "Narni (Umbrien)",
+      "lat": 42.5186,
+      "lng": 12.5151,
+      "description": "Handlungsort in Staffel 4.",
+      "background": "Episodischer Schauplatz.",
+      "image": "",
+      "source": "Medienwissenschaftliche Analyse",
+      "reliability": "Hoch",
+      "sourceURL": "https://www.umbriatourism.it/"
+    },
+    {
+      "id": "broll_ponte_delle_torri",
+      "name": "Ponte delle Torri & Rocca Albornoziana (Spoleto)",
+      "description": "Häufige Drohnenflüge und Weitwinkelaufnahmen zur räumlichen Orientierung ab Staffel 9.",
+      "source": "Medienwissenschaftliche Analyse",
+      "sourceURL": "https://www.adagioumbro.it/don-matteo-in-spoleto-september-umbria/",
+      "reliability": "Hoch",
+      "lat": 42.732,
+      "lng": 12.7425,
+      "is_b_roll": true
+    },
+    {
+      "id": "broll_umbria_countryside",
+      "name": "Landschaften und Weinberge (Valnerina, Montefalco)",
+      "description": "Übergangsbilder von Wäldern, Olivenhainen und ländlicher Tradition.",
+      "source": "Medienwissenschaftliche Analyse",
+      "sourceURL": "https://www.umbriatourism.it/",
+      "reliability": "Hoch",
+      "lat": 42.7744,
+      "lng": 12.6508,
+      "is_b_roll": true
+    },
+    {
+      "id": "broll_gubbio_panorama",
+      "name": "Weitwinkelpanorama Gubbio",
+      "description": "Klassisches Schnittbild der Staffeln 1-8.",
+      "source": "Medienwissenschaftliche Analyse",
+      "sourceURL": "https://www.moretimetotravel.com/visiting-gubbio-with-don-matteo/",
+      "reliability": "Hoch",
+      "lat": 43.3533,
+      "lng": 12.5786,
+      "is_b_roll": true
+    },
+    {
+      "id": "broll_mantova_unconfirmed",
+      "name": "Mantova (Mantua)",
+      "description": "Potenzielles Schnittbild (B-Roll). Die vorliegenden offiziellen Datenbanken verneinen Dreharbeiten vor Ort, stattdessen wird die Präsenz in der Serie ausschließlich durch visuelle Beobachtungen postuliert.",
+      "source": "Nutzer-Validierung / Visuelle Evidenz vs. Produktionsdatenbanken",
+      "sourceURL": "",
+      "reliability": "Unbestätigt",
+      "lat": 45.1564,
+      "lng": 10.7914,
+      "is_b_roll": true,
+      "unknown_coordinates": true
     }
   ]
 }
