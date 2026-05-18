@@ -197,7 +197,7 @@ window.showDetails = function(locationId) {
     document.getElementById('details-source-reliability').textContent = `Zuverlässigkeit: ${loc.reliability}`;
 
     const sourceLink = document.getElementById('details-source-link');
-    if (loc.sourceURL) {
+    if (loc.sourceURL && loc.sourceURL !== "#" && loc.sourceURL.trim() !== "") {
         sourceLink.href = loc.sourceURL;
         sourceLink.classList.remove('hidden');
     } else {
