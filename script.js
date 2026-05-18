@@ -58,6 +58,12 @@ function createTimeline() {
         setActiveButton(e.target);
         showAllLocations();
     });
+
+    // Event Listener für "B-Roll" Button
+    document.querySelector('[data-season="b-roll"]').addEventListener('click', (e) => {
+        setActiveButton(e.target);
+        showBRollLocations();
+    });
 }
 
 // Zeige alle Orte
@@ -67,11 +73,13 @@ function showAllLocations() {
     const bounds = L.latLngBounds();
 
     window.appData.locations.forEach(loc => {
-        addMarker(loc);
-        bounds.extend([loc.lat, loc.lng]);
+        if (!loc.is_b_roll) {
+            addMarker(loc);
+            bounds.extend([loc.lat, loc.lng]);
+        }
     });
 
-    if (window.appData.locations.length > 0) {
+    if (markers.length > 0) {
         map.fitBounds(bounds, { padding: [50, 50] });
     }
 }
@@ -85,7 +93,6 @@ function showSeasonLocations(seasonId) {
 
     const bounds = L.latLngBounds();
     let locationsShown = 0;
-    const seasonLocationIds = new Set(season.location_ids);
 
     window.appData.locations.forEach(loc => {
         if (season.location_ids.includes(loc.id)) {
@@ -100,10 +107,57 @@ function showSeasonLocations(seasonId) {
     }
 }
 
+// Zeige B-Rolls
+function showBRollLocations() {
+    clearMarkers();
+
+    const bounds = L.latLngBounds();
+    let locationsShown = 0;
+
+    window.appData.locations.forEach(loc => {
+        if (loc.is_b_roll) {
+            addMarker(loc);
+            if (!loc.unknown_coordinates) {
+                bounds.extend([loc.lat, loc.lng]);
+            }
+            locationsShown++;
+        }
+    });
+
+    if (locationsShown > 0 && bounds.isValid()) {
+        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+    }
+}
+
 // Füge einen Marker hinzu
 function addMarker(location) {
-    // Custom Icon im Carabinieri Look (optional, hier Standard mit Farbe)
-    const marker = L.marker([location.lat, location.lng]).addTo(map);
+    let markerOptions = {};
+
+    if (location.is_b_roll) {
+        // Green icon for b-roll
+        const greenIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+        markerOptions.icon = greenIcon;
+    } else if (location.unknown_coordinates) {
+        // Grey icon for unknown coords (if any standard location has it)
+        const greyIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+        markerOptions.icon = greyIcon;
+    }
+
+    const marker = L.marker([location.lat, location.lng], markerOptions).addTo(map);
 
     const container = document.createElement('div');
     container.style.textAlign = 'center';
@@ -141,6 +195,14 @@ window.showDetails = function(locationId) {
     document.getElementById('details-background').textContent = loc.background;
     document.getElementById('details-source').textContent = loc.source;
     document.getElementById('details-source-reliability').textContent = `Zuverlässigkeit: ${loc.reliability}`;
+
+    const sourceLink = document.getElementById('details-source-link');
+    if (loc.sourceURL) {
+        sourceLink.href = loc.sourceURL;
+        sourceLink.classList.remove('hidden');
+    } else {
+        sourceLink.classList.add('hidden');
+    }
 
     const detailsContainer = document.getElementById('details-container');
     detailsContainer.classList.remove('hidden');
