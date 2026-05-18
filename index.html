@@ -25,6 +25,7 @@
             <h2>Wähle eine Staffel</h2>
             <div id="timeline">
                 <button class="season-btn active" data-season="all">Alle Drehorte</button>
+                <button class="season-btn b-roll-btn" data-season="b-roll">B-Roll & Schnittbilder</button>
                 <!-- Season buttons will be generated here -->
             </div>
         </section>
@@ -43,7 +44,10 @@
                     <p class="description" id="details-description">Kurze Beschreibung</p>
                     <h3>Hintergrundinformationen</h3>
                     <p id="details-background">Hintergrundinfos</p>
-                    <p class="source-info">Quelle: <span id="details-source">Quelle</span></p>
+                    <p class="source-info">
+                        Quelle: <span id="details-source">Quelle</span>
+                        <a id="details-source-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden">Zur Quelle</a>
+                    </p>
                 </div>
             </div>
         </section>
