@@ -3,58 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Don Matteo - Interaktive Karte der Drehorte</title>
+    <title>Don Matteo – Interaktive Karte der Drehorte (Staffel 1–15)</title>
+    <meta name="description" content="Interaktive Karte aller belegten Drehorte der Serie Don Matteo, von Gubbio über Spoleto bis in die Tuscia – mit Staffelzuordnung, Quellen und Verlässlichkeitsangaben.">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Don Matteo - Drehorte</h1>
-        <p>Eine interaktive Reise durch Gubbio und Spoleto</p>
+        <div class="kopf-inhalt">
+            <p class="kopf-eyebrow">Rai 1 · seit 2000 · 15 Staffeln</p>
+            <h1>Don Matteo – Drehorte</h1>
+            <p class="kopf-untertitel">Von Gubbio über Spoleto bis in die Tuscia: jeder belegte Drehort mit Quelle, Staffelzuordnung und Verlässlichkeit.</p>
+            <ul class="kennzahlen" id="kennzahlen"></ul>
+        </div>
     </header>
 
     <main>
-        <section id="map-container">
-            <div id="map"></div>
-        </section>
+        <section id="steuerung" aria-label="Filter">
+            <div class="steuerung-block">
+                <h2>Staffel wählen</h2>
+                <div id="staffel-leiste" class="staffel-leiste"></div>
+            </div>
 
-        <section id="timeline-container">
-            <h2>Wähle eine Staffel</h2>
-            <div id="timeline">
-                <button class="season-btn active" data-season="all">Alle Drehorte</button>
-                <button class="season-btn b-roll-btn" data-season="b-roll">B-Roll & Schnittbilder</button>
-                <!-- Season buttons will be generated here -->
+            <div class="steuerung-block filterzeile">
+                <div class="filter-feld filter-suche">
+                    <label for="suche">Suche</label>
+                    <input type="search" id="suche" placeholder="Ort, Straße, Rolle in der Serie, Folge …" autocomplete="off">
+                </div>
+
+                <div class="filter-feld">
+                    <label for="region">Region</label>
+                    <select id="region"></select>
+                </div>
+
+                <div class="filter-feld">
+                    <label for="stufe">Verlässlichkeit</label>
+                    <select id="stufe">
+                        <option value="alle">alle</option>
+                        <option value="hoch">nur hoch</option>
+                        <option value="mittel">mindestens mittel</option>
+                        <option value="niedrig">nur niedrig</option>
+                    </select>
+                </div>
+
+                <div class="filter-feld filter-schalter">
+                    <label class="schalter">
+                        <input type="checkbox" id="handlungsorte" checked>
+                        <span>Handlungsorte (kein belegter Drehort) zeigen</span>
+                    </label>
+                    <label class="schalter">
+                        <input type="checkbox" id="nur-koordinaten">
+                        <span>Nur Orte mit Koordinaten</span>
+                    </label>
+                </div>
+
+                <button type="button" id="filter-zuruecksetzen" class="knopf-schlicht">Filter zurücksetzen</button>
             </div>
         </section>
 
-        <section id="details-container" class="hidden">
+        <section id="staffel-info" class="hidden" aria-live="polite"></section>
+
+        <section id="karten-bereich">
+            <div class="karten-spalte">
+                <div id="map"></div>
+                <ul class="legende" id="legende"></ul>
+            </div>
+
+            <aside class="listen-spalte" aria-label="Liste der Drehorte">
+                <div class="listen-kopf">
+                    <h2>Drehorte</h2>
+                    <p id="treffer-zahl" class="treffer-zahl"></p>
+                </div>
+                <ul id="ortsliste" class="ortsliste"></ul>
+                <p id="leer-hinweis" class="leer-hinweis hidden">Keine Drehorte für diese Filterkombination.</p>
+            </aside>
+        </section>
+
+        <section id="details-container" class="hidden" aria-live="polite">
             <div id="details-content">
-                <button id="close-details">&times;</button>
-                <div class="details-image-container">
-                    <img id="details-image" src="" alt="Drehort Bild">
+                <button id="close-details" type="button" aria-label="Detailansicht schließen">&times;</button>
+                <div class="details-kopf">
+                    <p class="details-typ" id="details-typ"></p>
+                    <h2 id="details-name"></h2>
+                    <p class="details-name-it" id="details-name-it"></p>
+                    <ul class="badge-leiste" id="details-badges"></ul>
                 </div>
-                <div class="details-info">
-                    <h2 id="details-name">Name des Ortes</h2>
-                    <div class="info-badge">
-                        <span id="details-source-reliability" class="reliability-high">Quelle</span>
+                <div class="details-spalten">
+                    <div class="details-haupt">
+                        <div id="details-warnung" class="warnkasten hidden"></div>
+                        <h3>Rolle in der Serie</h3>
+                        <p id="details-rolle"></p>
+                        <div id="details-beschreibung-block">
+                            <h3>Der Ort</h3>
+                            <p id="details-beschreibung"></p>
+                        </div>
+                        <div id="details-folgen-block">
+                            <h3>Folgen (Beispiele)</h3>
+                            <p id="details-folgen"></p>
+                        </div>
+                        <div id="details-notizen-block">
+                            <h3>Anmerkungen zur Quellenlage</h3>
+                            <p id="details-notizen"></p>
+                        </div>
                     </div>
-                    <p class="description" id="details-description">Kurze Beschreibung</p>
-                    <h3>Hintergrundinformationen</h3>
-                    <p id="details-background">Hintergrundinfos</p>
-                    <p class="source-info">
-                        Quelle: <span id="details-source">Quelle</span>
-                        <a id="details-source-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden">Zur Quelle</a>
-                    </p>
+                    <div class="details-neben">
+                        <h3>Steckbrief</h3>
+                        <dl id="details-fakten" class="fakten"></dl>
+                        <h3>Quellen</h3>
+                        <ul id="details-quellen" class="quellenliste"></ul>
+                        <div id="details-links" class="details-links"></div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section id="hinweise">
+            <h2>Was diese Karte nicht zeigt</h2>
+            <ul id="vorbehalte"></ul>
+        </section>
+
+        <section id="quellen-bereich">
+            <details>
+                <summary><h2>Quellenregister</h2><span id="quellen-zahl"></span></summary>
+                <ul id="quellenregister" class="quellenregister"></ul>
+            </details>
         </section>
     </main>
 
     <footer>
-        <p>Erstellt für Don Matteo Fans.</p>
+        <p>Erstellt für Don Matteo Fans. Datenstand <span id="datenstand"></span>.</p>
+        <p class="fussnote">Kartendaten &copy; OpenStreetMap-Mitwirkende · Koordinaten aus Google Places</p>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
