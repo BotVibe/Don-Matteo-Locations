@@ -38,4 +38,4 @@ Diese Datei enthält wichtige Informationen und Richtlinien für KI-Agenten, die
 *   **Dateien lesen:** Die Ausgabe des Tools zum Lesen von Dateien (`read_file`) kann bei 1000 Zeichen abgeschnitten sein. Verwende für größere Dateien `run_in_bash_session` mit `cat` oder `sed`.
 
 ## 8. Deployment
-*   **GitHub Pages:** Das Projekt wird automatisch via GitHub Actions (`.github/workflows/deploy.yml`) auf GitHub Pages bereitgestellt, sobald Änderungen in den `deploy`-Branch gepusht oder gemergt werden.
+*   **GitHub Pages:** Das Projekt wird automatisch via GitHub Actions (`.github/workflows/deploy.yml`) auf GitHub Pages bereitgestellt, sobald Änderungen in den Standard-Branch `main` gepusht oder gemergt werden. Der Trigger im Workflow muss auf den tatsächlichen Standard-Branch zeigen – zeigt er auf einen nicht existierenden Branch, läuft der Deploy stillschweigend nie.
