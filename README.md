@@ -111,7 +111,8 @@ Google Places, die zugehörigen `google_place_id` liegen im Datensatz bei.
 ## Deployment auf GitHub Pages
 
 Ein GitHub-Actions-Workflow (`.github/workflows/deploy.yml`) veröffentlicht die Seite
-automatisch, sobald Änderungen im Branch `master` landen. Einmalig muss unter
+automatisch, sobald Änderungen im Standard-Branch `main` landen; zusätzlich lässt er sich im
+Reiter **Actions** manuell starten (`workflow_dispatch`). Einmalig muss unter
 **Settings › Pages › Build and deployment › Source** der Eintrag **GitHub Actions** gewählt
 werden.
 
