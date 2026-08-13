@@ -138,6 +138,19 @@ main > section {
     z-index: 1;
 }
 
+/* --------------------------------------------------------- Störungshinweis */
+
+.fehlerbanner {
+    background: #FFF5F5;
+    border: 2px solid var(--rot);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    color: #742A2A;
+    position: relative;
+    z-index: 1;
+    overflow-wrap: anywhere;
+}
+
 /* ------------------------------------------------------------------ Filter */
 
 .steuerung-block + .steuerung-block {
