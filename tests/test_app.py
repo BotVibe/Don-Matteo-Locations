@@ -189,6 +189,17 @@ def tests_ausfuehren(seite, lauf: Testlauf):
         "Vorbehalte werden ausgegeben",
     )
 
+    print("\n11. Störungshinweis")
+    expect(seite.locator("#fehlerbanner")).to_have_class("fehlerbanner hidden")
+    lauf.pruefe(True, "Kein Störungsbanner im Normalbetrieb")
+
+    seite.evaluate("window.fehlerAnzeigen('Testfehler.', 'Einzelheit')")
+    lauf.pruefe(
+        seite.locator("#fehlerbanner").is_visible()
+        and "Testfehler" in seite.locator("#fehlerbanner").inner_text(),
+        "Störungsbanner wird bei einem Fehler sichtbar",
+    )
+
 
 def main():
     server = server_starten()
@@ -209,7 +220,7 @@ def main():
 
             tests_ausfuehren(seite, lauf)
 
-            print("\n11. Konsole")
+            print("\n12. Konsole")
             lauf.gleich(fehlerausgaben, [], "Keine JavaScript-Fehler auf der Seite")
 
             browser.close()

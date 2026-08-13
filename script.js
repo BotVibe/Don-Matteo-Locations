@@ -47,6 +47,19 @@ function sichtbar(knoten, anzeigen) {
     knoten.classList.toggle('hidden', !anzeigen);
 }
 
+/**
+ * Zeigt eine Störung sichtbar auf der Seite an. Ohne diesen Hinweis bliebe die
+ * Seite bei einem Fehler einfach leer, ohne Erklärung für den Besucher.
+ */
+function fehlerAnzeigen(titel, einzelheit) {
+    const banner = document.getElementById('fehlerbanner');
+    if (!banner) return;
+    leeren(banner);
+    banner.appendChild(el('strong', null, titel));
+    if (einzelheit) banner.appendChild(document.createTextNode(` ${einzelheit}`));
+    sichtbar(banner, true);
+}
+
 function datumDeutsch(iso) {
     const treffer = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
     if (!treffer) return iso || '';
@@ -96,7 +109,10 @@ function karteInitialisieren() {
     if (typeof L === 'undefined') {
         const behaelter = document.getElementById('map');
         behaelter.classList.add('karte-fehlt');
-        behaelter.appendChild(el('p', null, 'Die Kartenbibliothek konnte nicht geladen werden. Alle Drehorte stehen in der Liste rechts.'));
+        behaelter.appendChild(el('p', null,
+            'Die Kartenbibliothek (Leaflet von unpkg.com) konnte nicht geladen werden – '
+            + 'häufig blockiert das ein Werbeblocker oder ein Firmennetz. '
+            + 'Alle Drehorte stehen weiterhin in der Liste.'));
         return;
     }
 
@@ -116,6 +132,10 @@ async function datenLaden() {
     } catch (fehler) {
         console.error('Fehler beim Laden der Daten:', fehler);
         ladefehlerAnzeigen();
+        fehlerAnzeigen(
+            'Die Drehortdaten konnten nicht geladen werden.',
+            `${new URL('data.json', window.location.href).href} – ${fehler.message}`,
+        );
         return;
     }
 
@@ -786,11 +806,21 @@ function ansichtAktualisieren({ karteAnpassen = false } = {}) {
         : `${orte.length} Orte`;
 }
 
+// Fängt Fehler ab, die außerhalb des Aufbaus auftreten (z. B. in Leaflet).
+window.addEventListener('error', (ereignis) => {
+    if (ereignis.message) fehlerAnzeigen('Es ist ein Fehler aufgetreten:', ereignis.message);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('close-details').addEventListener('click', detailsSchliessen);
-    document.addEventListener('keydown', (ereignis) => {
-        if (ereignis.key === 'Escape') detailsSchliessen();
-    });
-    karteInitialisieren();
-    datenLaden();
+    try {
+        document.getElementById('close-details').addEventListener('click', detailsSchliessen);
+        document.addEventListener('keydown', (ereignis) => {
+            if (ereignis.key === 'Escape') detailsSchliessen();
+        });
+        karteInitialisieren();
+        datenLaden();
+    } catch (fehler) {
+        console.error('Fehler beim Aufbau der Seite:', fehler);
+        fehlerAnzeigen('Die Seite konnte nicht vollständig aufgebaut werden.', fehler.message);
+    }
 });
