@@ -108,16 +108,11 @@ Tourism, Italy for Movies), aus Vor-Ort-Reportagen von Fanseiten, aus der Presse
 Reise-Blogs; das vollständige Register ist in der Webapp einsehbar. Die Koordinaten stammen aus
 Google Places, die zugehörigen `google_place_id` liegen im Datensatz bei.
 
-## Deployment auf GitHub Pages
+## Deployment
 
-Ein GitHub-Actions-Workflow (`.github/workflows/deploy.yml`) veröffentlicht die Seite
-automatisch, sobald Änderungen im Standard-Branch `main` landen; zusätzlich lässt er sich im
-Reiter **Actions** manuell starten (`workflow_dispatch`). Einmalig muss unter
-**Settings › Pages › Build and deployment › Source** der Eintrag **GitHub Actions** gewählt
-werden.
+Produktiv: **https://matteo.rosentreter.site**. GitHub Pages wird nicht mehr genutzt.
 
-Die Seite ist danach unter `https://<benutzername>.github.io/<repository-name>/` erreichbar.
-Eine eigene Domain lässt sich unter **Settings › Pages › Custom domain** eintragen; dazu müssen
-beim Domain-Anbieter die passenden A- bzw. CNAME-Records auf GitHub zeigen (siehe
-[GitHub-Dokumentation](https://docs.github.com/de/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)).
-Anschließend sollte **Enforce HTTPS** aktiviert werden.
+- `.github/workflows/docker-publish.yml` baut das `Dockerfile` bei jedem PR (nur Build) und pusht bei jedem Push auf `main` `ghcr.io/botvibe/don-matteo-locations:main` (+ `sha-<short>`).
+- Das Image ist nginx mit `index.html`, `script.js`, `style.css`, `data.json`, einem `/healthz`-Endpunkt (Docker-`HEALTHCHECK`) und dem Header `X-App-Revision` mit dem Commit-SHA (auch Label `org.opencontainers.image.revision`).
+- `deploy/compose.yml` startet den Container read-only im externen Netz `web` ohne Host-Ports; der gemeinsame Caddy-Proxy terminiert TLS.
+- Kartenkacheln kommen direkt von OpenStreetMap (kein API-Key nötig). Dafür braucht OSM einen Referer, deshalb `Referrer-Policy: strict-origin-when-cross-origin`.

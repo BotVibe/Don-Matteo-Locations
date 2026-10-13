@@ -38,4 +38,6 @@ Diese Datei enthält wichtige Informationen und Richtlinien für KI-Agenten, die
 *   **Dateien lesen:** Die Ausgabe des Tools zum Lesen von Dateien (`read_file`) kann bei 1000 Zeichen abgeschnitten sein. Verwende für größere Dateien `run_in_bash_session` mit `cat` oder `sed`.
 
 ## 8. Deployment
-*   **GitHub Pages:** Das Projekt wird automatisch via GitHub Actions (`.github/workflows/deploy.yml`) auf GitHub Pages bereitgestellt, sobald Änderungen in den Standard-Branch `main` gepusht oder gemergt werden. Der Trigger im Workflow muss auf den tatsächlichen Standard-Branch zeigen – zeigt er auf einen nicht existierenden Branch, läuft der Deploy stillschweigend nie.
+*   **Produktion:** https://matteo.rosentreter.site – Image `ghcr.io/botvibe/don-matteo-locations:main` (gebaut von `.github/workflows/docker-publish.yml`) über `deploy/compose.yml` hinter dem gemeinsamen Caddy-Proxy. GitHub Pages ist abgeschaltet; keinen Pages-Workflow wieder hinzufügen.
+*   **Dockerfile:** kopiert nur Laufzeitdateien. Lädt die App eine neue Datei, muss sie in die `COPY`-Liste.
+*   **nginx.conf:** `/healthz` und `X-App-Revision` (`__APP_REVISION__`, beim Build ersetzt) beibehalten. Keine COEP/COOP (externe Leaflet-/Font-/OSM-Ressourcen); Referrer-Policy nicht auf `no-referrer` setzen, sonst blockiert OSM die Kacheln.
